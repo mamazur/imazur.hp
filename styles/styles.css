@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'MaisonNeue', sans-serif;
+  margin: auto;
+  max-width: 1400px;
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+.container{
+
+} 
+
+.wrapper{
+  display: flex;
+  padding: 7vw;
+  min-height: 550px;
+  height: auto;
+}
+
+.wrapper:nth-child(even){
+  background-color: whitesmoke;
+  opacity: .8;
+  background: url(../img/black-stars.svg) repeat;
+ 
+}
+.wrapper:nth-child(odd){
+  background-color: white;
+}
+
+
+.title {
+  width: 70%;
+  font-size: 7vw;
+  font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .button-text {
+    display: none;
+  }
+  
+  .fas.fa-download{
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .download-files {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*Animations*/
+@keyframes move {
+  0% {
+      transform: translateY(0px);
+  }
+  100% {
+      transform: translateY(20%);
+  }
+}
+
+@keyframes changeBg {
+  0% {
+      background: url(../img/black-stars.svg) repeat, linear-gradient(to bottom right, rgba(236, 49, 27, 0.49), rgba(0, 0, 0, 0));
+  }
+  100% {
+      background: url(../img/black-stars.svg) repeat, linear-gradient(to bottom right, rgba(236, 27, 85, 0.49), rgba(0, 0, 0, 0));
+  }
+}
+
+@keyframes preloader {
+  50% {
+  transform: rotate(360deg);
+  } 
+}
+
