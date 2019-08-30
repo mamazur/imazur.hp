@@ -3,40 +3,90 @@
 }
 
 body {
-  font-family: 'MaisonNeue', sans-serif;
+  /*font-family: 'MaisonNeue', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
   margin: auto;
-  max-width: 1400px;
   background-color: whitesmoke;
-  height: 100%;
+  height:100%;
 }
 
 .container{
-
-} 
-
-.wrapper{
-  display: flex;
-  padding: 7vw;
-  min-height: 550px;
-  height: auto;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
+.wrapper{
+  scroll-snap-align: start;
+  display: flex;
+  padding: 6vw;
+  height: 100vh;
+ }
+
 
 .wrapper:nth-child(even){
-  background-color: whitesmoke;
-  opacity: .8;
-  background: url(../img/black-stars.svg) repeat;
- 
-}
-.wrapper:nth-child(odd){
-  background-color: white;
+    background: url(../img/pattern.svg);
 }
 
+.wrapper:nth-child(odd){
+  background-color: #FFD02F;
+}
+
+.images{
+  display: flex;
+}
+
+img{
+  height: 25vw;
+  width: 25vw;
+}
 
 .title {
+  /*background: url(../img/black-stars.svg) repeat;*/
   width: 70%;
-  font-size: 7vw;
-  font-weight: 600;
+  font-size: 5vw;
+  max-height: 470px;;
+   background: url(../img/cover.svg);
+  padding: 37px;
+  color: white;
+
+  clip-path: polygon(100% 0, 100% 92%, 96% 100%, 0 100%, 0 0);
 }
+
+.blue-background{
+  background-color: #020285f8;
+}
+
+.coral-background{
+  background-color: coral;
+}
+
+.image-round img{
+  z-index: 99;
+  width: 17vw;
+  height: 17vw;
+  border-radius: 50%;
+  border: solid 5px;
+  
+}
+
+.links img{
+  width: 5vw;
+  height: 5vw;
+  margin: 15px;
+  float: right;
+}
+
+
+.name{
+  background: whitesmoke;
+  position: absolute;
+  padding: 5px;
+  font-size: 1vw;
+  top: 50%;
+  right: -19px;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
+}
+ 
 @media screen and (max-width: 900px) {
   .row {
     flex-direction: column;
@@ -70,16 +120,21 @@ body {
 
 @keyframes changeBg {
   0% {
-      background: url(../img/black-stars.svg) repeat, linear-gradient(to bottom right, rgba(236, 49, 27, 0.49), rgba(0, 0, 0, 0));
+      background: url(../img/plate.jpg);
+  }
+  25% {
+      background: url(../img/plate2.jpg);
+  }
+  50% {
+      background: url(../img/plate3.jpg);
+  }
+  75% {
+      background: url(../img/plate4.jpg);
   }
   100% {
-      background: url(../img/black-stars.svg) repeat, linear-gradient(to bottom right, rgba(236, 27, 85, 0.49), rgba(0, 0, 0, 0));
+      background: url(../img/plate5.jpg);
   }
 }
 
-@keyframes preloader {
-  50% {
-  transform: rotate(360deg);
-  } 
-}
+
 
