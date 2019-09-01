@@ -68,22 +68,19 @@ body {
   clip-path: polygon(100% 0, 100% 92%, 96% 100%, 0 100%, 0 0);
 }
 
-#id2:before{
+#id2:before, #id4:before{
   content: '';
   width: 35vw;
   height: 20vw;
   background: #FFD02F;
   position: absolute;
-
   clip-path: polygon(100% 0, 0 0, 91% 20%);
 }
-
 
 .image-round img{
   z-index: 99;
   width: 400px;
   height: 400px;
-  opacity: .8;
   border-radius: 50%;
   border: solid white 10px;
   
@@ -101,6 +98,17 @@ body {
   
 }
 
+.group{
+  position: relative;
+}
+.desc{
+  position: absolute;
+  text-align: left;
+  top: 250px;
+  left: -120px;
+
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
+}
 .me{
   position: absolute;
   top: 60px;
