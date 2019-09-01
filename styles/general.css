@@ -1,0 +1,23 @@
+.blue-background{
+    background-color: #020285f8 !important;
+  }
+  
+  .coral-background{
+    background-color: coral !important;
+  }
+  
+  .dark-background{
+    background-color: #073349 !important;
+  }
+  
+  .center{
+    text-align: center;
+  }
+
+  .text-middle{
+      font-size: 3vw;
+  }
+
+  .text-white{
+      color: white;
+  }
