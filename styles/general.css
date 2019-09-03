@@ -5,9 +5,13 @@
   .coral-background{
     background-color: coral !important;
   }
-  
+
   .dark-background{
     background-color: #073349 !important;
+  }
+  
+  .white-background{
+    background-color: #ffffff !important;
   }
   
   .center{
@@ -20,4 +24,8 @@
 
   .text-white{
       color: white;
+  }
+
+  .dark-border{
+    border: solid black 10px;
   }

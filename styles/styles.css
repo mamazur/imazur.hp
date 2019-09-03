@@ -10,19 +10,15 @@ body {
   height: 100%;
 }
 
-.container{
-
-  overflow-y: scroll;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(500px);
-  scroll-snap-type: y mandatory;
+a{
+  text-decoration: none;
 }
+
 .wrapper{
-  scroll-snap-align: start;
   position: relative;
-  min-height: 100vh;
-  height: auto;
- }
+  padding: 2vw;
+  min-height: 800px;
+}
 
 .wrapper:nth-child(even){
   background-color: #020285f8;
@@ -32,9 +28,38 @@ body {
   background-color: #FFD02F;
 }
 
+#id2{
+  min-height: 30vw;
+  background: url(../img/circles.svg);
+}
+
+
+
+.title {
+  width: 70%;
+  font-size: 5vw;
+  height: 489px;;
+  background: url(../img/cover2.svg);
+  top: 50px;
+  left: 50px;
+  position: absolute;
+  color: white;
+  padding: 37px;
+  clip-path: polygon(100% 0, 100% 92%, 96% 100%, 0 100%, 0 0);
+}
+
+
+/*IMAGES*/
+
+.slideshow{
+  display: flex;
+}
 .images{
   display: flex;
   flex-wrap:  wrap;
+}
+.quote{
+  width:30%;
 }
 
 .images img{
@@ -48,34 +73,6 @@ body {
 .images img:hover{
   animation: pulse 4s infinite  alternate;
 }
-.border{
-  position: absolute;
-  bottom: -10px;
-  left: -23px;
-  width: 100vw;
-}
-
-.title {
-  width: 70%;
-  font-size: 5vw;
-  max-height: 470px;;
-  background: url(../img/cover.svg) ;
-  top: 10vw;
-  left: 10vw;
-  position: absolute;
-  color: white;
-  padding: 37px;
-  clip-path: polygon(100% 0, 100% 92%, 96% 100%, 0 100%, 0 0);
-}
-
-#id2:before, #id4:before{
-  content: '';
-  width: 35vw;
-  height: 20vw;
-  background: #FFD02F;
-  position: absolute;
-  clip-path: polygon(100% 0, 0 0, 91% 20%);
-}
 
 .image-round img{
   z-index: 99;
@@ -83,68 +80,54 @@ body {
   height: 400px;
   border-radius: 50%;
   border: solid white 10px;
-  
 }
+
+.border{
+  position: absolute;
+  bottom: -10px;
+  left: -23px;
+  width: 100vw;
+}
+
 .links{
-  width: 60%;
   margin: auto;
-  padding-top: 7%;
+  line-height: 6em;
   font-family: 'Quicksand', sans-serif;
 }
 
 .links img{
   width: 5vw;
   height: 5vw;
-  
 }
 
-.group{
-  position: relative;
+.images{
+  width: 70%;
 }
-.desc{
-  position: absolute;
-  text-align: left;
-  top: 250px;
-  left: -120px;
 
-  transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
-}
 .me{
   position: absolute;
   top: 60px;
   right: 200px;
   animation: fadeInDown 3s;
 }
-.name{
+.name{  
   background: whitesmoke;
   position: absolute;
   padding: 5px;
-  font-size: 1vw;
+  font-size: 2vw;
   top: 50%;
-  right: -19px;
+  right: -50px;
   transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
 }
 
  
 @media screen and (max-width: 900px) {
-  .row {
-    flex-direction: column;
-  }
-  
-  .button-text {
-    display: none;
-  }
-  
-  .fas.fa-download{
-    display: inline;
-  }
+
 }
 
 @media screen and (max-width: 1100px) {
-  .download-files {
-    display: flex;
-    flex-direction: column;
-  }
+
+
 }
 
 /*Animations*/
