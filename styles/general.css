@@ -22,10 +22,22 @@
       font-size: 3vw;
   }
 
+  .text-big{
+      font-size: 7vw;
+  }
+
   .text-white{
       color: white;
   }
 
   .dark-border{
     border: solid black 10px;
+  }
+
+  .text-lobster{
+    font-family: 'Lobster', cursive;
+  }
+
+  .text-abril{
+    font-family: 'Abril Fatface', cursive;
   }
