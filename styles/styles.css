@@ -12,6 +12,7 @@ body {
 
 a{
   text-decoration: none;
+  color: antiquewhite;
 }
 
 .wrapper{
@@ -36,8 +37,8 @@ a{
   min-height: 30vw;
   background: url(../img/circles.svg);
 }
-#id5{
-  min-height: 10vw;
+#id5, #id6{
+  min-height: 5vw;
 }
 
 p i {
@@ -83,8 +84,6 @@ p i {
   animation: pulse 4s infinite  alternate;
 }
 
-
-
 .border{
   position: absolute;
   bottom: -10px;
@@ -101,7 +100,8 @@ p i {
 
 .links{
   margin: auto;
-  line-height: 7em;
+  margin-top: 1em;
+  line-height: 6em;
   font-family: 'Quicksand', sans-serif;
 }
 
