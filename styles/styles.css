@@ -36,6 +36,9 @@ a{
   min-height: 30vw;
   background: url(../img/circles.svg);
 }
+#id5{
+  min-height: 10vw;
+}
 
 
 .title {
@@ -82,13 +85,20 @@ a{
 .border{
   position: absolute;
   bottom: -10px;
-  left: -23px;
-  width: 100vw;
+  left: 0;
+  width: 100%;
+}
+
+.border-down{
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
 }
 
 .links{
   margin: auto;
-  line-height: 6em;
+  line-height: 7em;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -103,7 +113,7 @@ a{
 
 .me{
   position: absolute;
-  top: 60px;
+  top: 10%;
   right: 10%;
   animation: fadeInDown 3s;
 }
@@ -113,7 +123,7 @@ a{
   padding: 5px;
   font-size: 2vw;
   top: 50%;
-  right: -50px;
+  left: 90%;
   transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
 }
 
@@ -123,11 +133,27 @@ a{
   min-height: 400px;
 }
 
-
-  .images{
+.images{
     width: 100%;
-  }
+}
 
+.images img {
+  height: 60vw;
+  width: 60vw;
+  margin: 3vw;
+  border: solid white 5px;
+}
+  
+
+.image-round img{
+  height: 35vw;
+  width: 35vw;
+  border: solid white 5px;
+}
+
+.me{
+  top:40%;
+}
   .slideshow{
     display: inline;
   }
