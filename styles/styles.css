@@ -40,6 +40,9 @@ a{
   min-height: 10vw;
 }
 
+p i {
+  font-size: 5vw;
+}
 
 .title {
   width: 50%;
@@ -118,7 +121,7 @@ a{
   animation: fadeInDown 3s;
 }
 .name{  
-  background: whitesmoke;
+  color: whitesmoke;
   position: absolute;
   padding: 5px;
   font-size: 2vw;
