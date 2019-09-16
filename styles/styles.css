@@ -18,28 +18,22 @@ a{
 .wrapper{
   position: relative;
   padding: 2vw;
-  min-height: 800px;
+  
 }
 
 .wrapper:nth-child(even){
-  background-color: #020285f8;
-}
-
-.wrapper:nth-child(odd){
   background-color: #FFD02F;
 }
 
-#id1{
-  background:  url(../img/circles2.svg) #FFD02F no-repeat;
+.wrapper:nth-child(odd){
+  background-color: #073349;
 }
 
-#id2{
-  min-height: 30vw;
-  background: url(../img/circles.svg);
+
+#id1{
+  background: url(../img/circles.svg) no-repeat #073349;
 }
-#id5, #id6{
-  min-height: 5vw;
-}
+
 
 p i {
   font-size: 5vw;
@@ -47,15 +41,6 @@ p i {
 
 .title {
   width: 50%;
-  font-size: 5vw;
-  text-align: justify; /* For Edge */
-  -moz-text-align-last: right; /* For Firefox prior 58.0 */
-  text-align-last: right;
-  top: 50px;
-  left: 50px;
-  position: absolute;
-  color: white;
-  padding: 37px;
 }
 
 
@@ -103,7 +88,6 @@ p i {
   margin: 2em;
   margin-bottom: 4em;
   line-height: 2em;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .links img{
@@ -116,10 +100,8 @@ p i {
 }
 
 .me{
-  position: absolute;
-  top: 10%;
-  right: 10%;
   animation: fadeInDown 3s;
+  margin-bottom: 8vw;
 }
 .name{  
   color: whitesmoke;
