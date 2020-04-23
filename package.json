@@ -1,0 +1,24 @@
+{
+  "name": "imazur.hp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel serve  index.html ",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamazur/imazur.hp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamazur/imazur.hp/issues"
+  },
+  "homepage": "https://github.com/mamazur/imazur.hp#readme",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}

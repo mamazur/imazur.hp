@@ -1,43 +1,47 @@
-@import url("animate.css");
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: auto;
   background-color: whitesmoke;
   height: 100%;
 }
 
-a{
+#id5 > a, a {
   text-decoration: none;
   color: antiquewhite;
+  margin: 0 .5rem;
 }
 
-.wrapper{
+.wrapper {
   position: relative;
   padding: 2vw;
-  
 }
 
-.wrapper:nth-child(even){
-  background-color: #FFD02F;
+.wrapper:nth-child(even) {
+  background-color: #ffd02f;
 }
 
-.wrapper:nth-child(odd){
+.wrapper:nth-child(odd) {
   background-color: #073349;
 }
 
-
-#id1{
+#id1 {
   background: url(../img/circles.svg) no-repeat #073349;
 }
 
-#id4{
-  background: url(../img/circles2.svg) no-repeat #FFD02F;
+#id4 {
+  background: url(../img/circles2.svg) no-repeat #ffd02f;
 }
 
+#id5 {
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
 
 p i {
   font-size: 5vw;
@@ -47,21 +51,21 @@ p i {
   width: 50%;
 }
 
-
 /*IMAGES*/
 
-.slideshow{
+.slideshow {
   display: flex;
 }
-.images{
+.images {
   display: flex;
-  flex-wrap:  wrap;
+  flex-wrap: wrap;
 }
-.quote{
-  width:30%;
+.quote {
+  width: 30%;
 }
 
-.images img, .image-round img{
+.images img,
+.image-round img {
   height: 25vw;
   width: 25vw;
   margin: 3vw;
@@ -69,45 +73,45 @@ p i {
   border: solid white 10px;
 }
 
-.images img:hover{
-  animation: pulse 4s infinite  alternate;
+.images img:hover {
+  animation: pulse 4s infinite alternate;
 }
 
-.border{
+.border {
   position: absolute;
   bottom: -10px;
   left: 0;
   width: 100%;
 }
 
-.border-down{
+.border-down {
   position: absolute;
   top: -5px;
   left: 0;
   width: 100%;
 }
 
-.links{
+.links {
   margin: auto;
   margin: 2em;
   margin-bottom: 4em;
   line-height: 2em;
 }
 
-.links img{
+.links img {
   width: 5vw;
   height: 5vw;
 }
 
-.images{
+.images {
   width: 70%;
 }
 
-.me{
+.me {
   animation: fadeInDown 3s;
   margin-bottom: 8vw;
 }
-.name{  
+.name {
   color: whitesmoke;
   position: absolute;
   padding: 5px;
@@ -117,45 +121,27 @@ p i {
   transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
 }
 
- 
 @media screen and (max-width: 900px) {
-
-
-.images{
+  .images {
     width: 100%;
-}
+  }
 
-.images img {
-  height: 50vw;
-  width: 50vw;
-  margin: 3vw;
-  border: solid white 5px;
-}
-  
-#id1 .slideshow{
-  display: flex;
-  flex-direction: row-reverse;
-}
+  .images img {
+    height: 50vw;
+    width: 50vw;
+    margin: 3vw;
+    border: solid white 5px;
+  }
 
-.slideshow{
+  #id1 .slideshow {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .slideshow {
     display: inline;
   }
-  .quote{
+  .quote {
     width: 100%;
   }
 }
-
-
-
-/*Animations*/
-@keyframes move {
-  0% {
-      transform: translateY(0px);
-  }
-  100% {
-      transform: translateY(20%);
-  }
-}
-
-
-
