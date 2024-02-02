@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/mamazur/imazur.hp#readme",
   "dependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.11.0"
   }
 }
